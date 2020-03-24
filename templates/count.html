@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>You have {{ count }} words</h1>
+
+<h2>Your text : </h2>
+{{ textar }}
+
+<h2>Word Count:</h2>
+
+{% for word, counttotal in ttcount %}
+
+{{ word }} - {{ counttotal }}
+<br />
+{% endfor %}
+
+</body>
+</html>
